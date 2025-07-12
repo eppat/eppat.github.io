@@ -243,6 +243,10 @@ ninja.data = [
           {%- assign social_id = "social-telegram" -%}
           {%- assign social_title = "telegram" -%}
           {%- capture social_url %}"https://telegram.me/{{ social[1] }}"{% endcapture -%}
+        {%- when "twitch" -%}
+          {%- assign social_id = "social-twitch" -%}
+          {%- assign social_title = "twitch" -%}
+          {%- capture social_url %}"https://twitch.tv/{{ social[1] }}"{% endcapture -%}
         {%- when "unsplash_id" -%}
           {%- assign social_id = "social-unsplash" -%}
           {%- assign social_title = "Unsplash" -%}
