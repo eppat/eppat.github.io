@@ -1,4 +1,22 @@
+title: Il Mio Sito di Videogiochi
+description: Notizie, recensioni e guide dal mondo dei videogiochi
 theme: minima
-title: My Gaming Blog
-description: Reviews, news, and guides about video games
-permalink: /:categories/:title/
+
+# Imposta il permalink senza date
+permalink: /:collection/:title/
+
+# Definizione delle collections
+collections:
+  news:
+    output: true
+    permalink: /news/:title/
+  recensioni:
+    output: true
+    permalink: /recensioni/:title/
+  guide:
+    output: true
+    permalink: /guide/:title/
+
+# Impostazioni generali
+author: "Il Mio Nome"
+lang: it
