@@ -10,9 +10,9 @@ paginate: true
   {% for post in paginator.posts %}
     {% if post.collection == "news" %}
       <article class="post-preview">
-        {% if post.header.image %}
+        {% if post.header.overlay_image %}
           <a href="{{ post.url }}">
-            <img src="{{ post.header.image | relative_url }}" alt="{{ post.title }}">
+            <img src="{{ post.header.overlay_image | relative_url }}" alt="{{ post.title }}">
           </a>
         {% endif %}
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
