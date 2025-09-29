@@ -1,11 +1,11 @@
 title: Il Mio Sito di Videogiochi
 description: Notizie, recensioni e guide dal mondo dei videogiochi
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes"
 
-# Imposta il permalink senza date
+# Permalink senza date
 permalink: /:collection/:title/
 
-# Definizione delle collections
+# Collections personalizzate
 collections:
   news:
     output: true
@@ -17,6 +17,19 @@ collections:
     output: true
     permalink: /guide/:title/
 
-# Impostazioni generali
-author: "Il Mio Nome"
-lang: it
+# Impostazioni autore
+author:
+  name: "Il Mio Nome"
+  bio: "Appassionato di videogiochi, scrivo notizie, recensioni e guide."
+  location: "Italia"
+
+# Navigazione (menu in alto)
+navigation:
+  - title: "Home"
+    url: /
+  - title: "News"
+    url: /news/
+  - title: "Recensioni"
+    url: /recensioni/
+  - title: "Guide"
+    url: /guide/

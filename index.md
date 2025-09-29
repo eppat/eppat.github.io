@@ -1,19 +1,22 @@
 ---
 layout: home
-title: Benvenuti su Il Mio Sito di Videogiochi
+author_profile: true
 ---
 
-# 📰 News
-{% for articolo in site.news %}
-- [{{ articolo.title }}]({{ articolo.url }})
+## 📰 Ultime News
+{% for articolo in site.news limit:3 %}
+- [{{ articolo.title }}]({{ articolo.url }})  
+  *{{ articolo.excerpt }}*
 {% endfor %}
 
-# 🎮 Recensioni
-{% for articolo in site.recensioni %}
-- [{{ articolo.title }}]({{ articolo.url }})
+## 🎮 Ultime Recensioni
+{% for articolo in site.recensioni limit:3 %}
+- [{{ articolo.title }}]({{ articolo.url }})  
+  *{{ articolo.excerpt }}*
 {% endfor %}
 
-# 📘 Guide
-{% for articolo in site.guide %}
-- [{{ articolo.title }}]({{ articolo.url }})
+## 📘 Ultime Guide
+{% for articolo in site.guide limit:3 %}
+- [{{ articolo.title }}]({{ articolo.url }})  
+  *{{ articolo.excerpt }}*
 {% endfor %}
