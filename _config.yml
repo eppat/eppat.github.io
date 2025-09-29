@@ -41,3 +41,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
+paginate: 5           # quanti articoli mostrare per pagina
+paginate_path: "/page:num/"
