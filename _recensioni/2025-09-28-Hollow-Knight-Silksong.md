@@ -1,6 +1,9 @@
 ---
-layout: single
 title: "Hollow Knight Silksong"
-date: 2025-09-28 12:00:00 +0000
+layout: single
+excerpt: "Il mio primo post sul sito"
+date: 2025-09-28
+author: "Il Mio Nome"
 ---
-This is my first post! 🚀 More content coming soon.
+Ciao! Questo è il mio primo articolo 🎮
+
