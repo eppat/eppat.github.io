@@ -7,19 +7,17 @@ paginate: true
 
 <section class="magazine">
   <h2>📰 Ultime News</h2>
-  {% for post in paginator.posts %}
-    {% if post.collection == "news" %}
-      <article class="post-preview">
-        {% if post.header.overlay_image %}
-          <a href="{{ post.url }}">
-            <img src="{{ post.header.overlay_image | relative_url }}" alt="{{ post.title }}">
-          </a>
+  {% for post in site.news %}
+    <article class="post-preview">
+        {% if post.header.image %}
+            <a href="{{ post.url }}">
+            <img src="{{ post.header.image | relative_url }}" alt="{{ post.title }}">
+            </a>
         {% endif %}
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
         <p><a href="{{ post.url }}">Leggi di più →</a></p>
-      </article>
-    {% endif %}
+        </article>
   {% endfor %}
 </section>
 
