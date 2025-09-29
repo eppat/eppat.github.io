@@ -5,6 +5,9 @@ remote_theme: "mmistakes/minimal-mistakes"
 # Permalink senza date
 permalink: /:collection/:title/
 
+include:
+  - assets
+
 # Collections personalizzate
 collections:
   news:
