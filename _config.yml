@@ -33,3 +33,11 @@ navigation:
     url: /recensioni/
   - title: "Guide"
     url: /guide/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
