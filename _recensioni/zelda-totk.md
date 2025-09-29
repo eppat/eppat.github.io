@@ -5,8 +5,7 @@ excerpt: "Un'avventura epica che ridefinisce il concetto di open world."
 date: 2025-09-28
 author: "Eppat"
 header:
-  overlay_image: /assets/images/zelda-totk.jpg
-  overlay_filter: 0.3
+  image: /assets/images/zelda-totk.jpg
   caption: "Nintendo - Tears of the Kingdom"
 ---
 
