@@ -2,10 +2,12 @@
 layout: home
 title: "Home"
 author_profile: true
+sidebar:
+    nav: "news"
 paginate: true
 ---
 
-<section class="magazine">
+<!-- <section class="magazine">
   <h2>📰 Ultime News</h2>
   {% for post in site.news %}
     <article class="post-preview">
@@ -19,7 +21,7 @@ paginate: true
         <p><a href="{{ post.url }}">Leggi di più →</a></p>
         </article>
   {% endfor %}
-</section>
+</section> -->
 
 <section class="magazine">
   <h2>🎮 Recensioni</h2>
